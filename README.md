@@ -67,26 +67,6 @@ The entire UI, multiple modules, and recommendation logic were designed & implem
 
 ---
 
-# 🗂️ Project Structure
-src/
-├── application/
-│ ├── AppNavigator.java
-│ ├── auth/
-│ ├── controller/
-│ ├── model/
-│ ├── service/
-│ └── util/
-├── data/
-│ ├── animals.json
-│ ├── trails.json
-│ └── groups.csv
-├── ui/
-│ ├── fxml files
-│ └── images
-
-
----
-
 # 🚀 Tech Stack
 
 ### **Frontend (Desktop UI)**
@@ -110,15 +90,15 @@ src/
 
 ### 🐾 Animal Detail Page  
 
-<img width="520" height="910" alt="36ea69e9ddbb7e1f0184653a28a63b30" src="https://github.com/user-attachments/assets/5a85eea0-97c3-4879-b79b-2f88f6900003" />
+<img width="260" height="455" alt="36ea69e9ddbb7e1f0184653a28a63b30" src="https://github.com/user-attachments/assets/5a85eea0-97c3-4879-b79b-2f88f6900003" />
 
 ### 🥾 Trail Results  
-<img width="530" height="1001" alt="da70f36b3c60ddf797e5ef4348df8ff0" src="https://github.com/user-attachments/assets/84adc5b2-24fd-4d07-b4a8-96c9fdaea785" />
+<img width="260" height="455" alt="da70f36b3c60ddf797e5ef4348df8ff0" src="https://github.com/user-attachments/assets/84adc5b2-24fd-4d07-b4a8-96c9fdaea785" />
 
 
 ---
 
-# 📌 My Contributions（个人贡献）
+# 📌 My Contributions
 
 ### 🟢 **UI / UX**
 - Designed complete user flow & UI prototypes  
