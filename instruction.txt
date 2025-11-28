@@ -1,0 +1,26 @@
+How to Run the Project
+
+1. Clone the project
+Download or clone the repository to your local machine.
+
+2. Open in Eclipse
+Open Eclipse and import the project as an existing Java project.
+
+3. Add JavaFX library
+Go to:
+Project → Properties → Java Build Path → Libraries → Add Library → User Library → JavaFX
+
+4. Add VM arguments
+Right-click Main.java → Run Configurations → Arguments → VM arguments:
+
+--add-modules javafx.controls,javafx.fxml
+
+5. Add Gson library:
+Right clik gson.jar ->Build Path->add to Build Path
+
+Or download gson.jar and add it through:
+Project → Build Path → Add External Archives
+
+
+6. Run
+Right-click Main.java → Run As → Java Application.

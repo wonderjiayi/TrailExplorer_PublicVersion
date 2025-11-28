@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.GroupCreateController"
+            maxWidth="Infinity" maxHeight="Infinity">
+
+    <top>
+        <HBox spacing="8" alignment="CENTER_LEFT">
+        <padding><Insets top="12" right="16" bottom="8" left="16"/></padding>
+        <Button text="← Back" onAction="#onBack"/>
+        <Label text="Create a Group" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+    	</HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+            <content>
+                <VBox spacing="12" fillWidth="true">
+                    <padding><Insets top="8" right="16" bottom="24" left="16"/></padding>
+
+                    <!-- Trail -->
+                    <Label text="Trail"/>
+                    <ComboBox fx:id="trailCombo" promptText="Select a trail" maxWidth="Infinity"/>
+
+                    <!-- Title -->
+                    <Label text="Title"/>
+                    <TextField fx:id="titleField" promptText="e.g., Sunday Morning Hike" />
+
+                    <!-- Start time -->
+                    <Label text="Start Time (YYYY-MM-DD HH:MM)"/>
+                    <TextField fx:id="startTimeField" promptText="2025-05-01 09:00"/>
+
+                    <!-- Capacity & Party side by side -->
+                    <HBox spacing="10">
+                        <VBox spacing="6" HBox.hgrow="ALWAYS">
+                            <Label text="Capacity (Max People)"/>
+                            <Spinner fx:id="capacitySpinner" editable="true" maxWidth="Infinity"/>
+                        </VBox>
+                        <VBox spacing="6" HBox.hgrow="ALWAYS">
+                            <Label text="Your Party Size"/>
+                            <Spinner fx:id="partySpinner" editable="true" maxWidth="Infinity"/>
+                        </VBox>
+                    </HBox>
+
+                    <!-- Preview / Validation hint -->
+                    <Label fx:id="previewLabel" textFill="#666666" />
+
+                    <!-- Error message -->
+                    <Label fx:id="errorLabel" textFill="#c62828" />
+
+                    <Button text="Create" onAction="#onCreate" maxWidth="Infinity" fx:id="createBtn"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
+
+
+
+

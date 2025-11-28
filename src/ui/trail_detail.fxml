@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.TrailDetailController"
+            stylesheets="@trail_detail.css"
+            fitToWidth="true"
+            styleClass="page-scroll">
+
+    <VBox spacing="12" styleClass="page-root">
+
+        <!-- Top Title -->
+        <Label fx:id="trailName" styleClass="title"/>
+
+        <!-- Park + Address -->
+        <VBox spacing="2">
+            <Label fx:id="parkLabel" styleClass="subtitle"/>
+            <Label fx:id="addressLabel" styleClass="subtitle"/>
+        </VBox>
+
+        <Separator/>
+
+        <!-- Summary badges -->
+        <HBox spacing="8">
+            <Label fx:id="difficultyLabel" styleClass="badge"/>
+            <Label fx:id="lengthLabel" styleClass="badge"/>
+            <Label fx:id="elevLabel" styleClass="badge"/>
+            <Label fx:id="visitLabel" styleClass="badge"/>
+        </HBox>
+
+        <!-- Topic -->
+        <VBox spacing="4">
+            <Label text="Topic" styleClass="section-title"/>
+            <Label fx:id="topicLabel" styleClass="section-content"/>
+        </VBox>
+
+        <!-- Environment -->
+        <VBox spacing="4">
+            <Label text="Environment" styleClass="section-title"/>
+            <GridPane hgap="12" vgap="6">
+                <Label text="🐶 Pet Friendly:"/>
+                <Label fx:id="petLabel" GridPane.columnIndex="1"/>
+
+                <Label text="🏕 Camping:" GridPane.rowIndex="1"/>
+                <Label fx:id="campLabel" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                <Label text="🐦 Birds:" GridPane.rowIndex="2"/>
+                <Label fx:id="birdLabel" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <Label text="🐾 Wildlife:" GridPane.rowIndex="3"/>
+                <Label fx:id="wildLabel" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                <Label text="❄️ Icy Trail:" GridPane.rowIndex="4"/>
+                <Label fx:id="icyLabel" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            </GridPane>
+        </VBox>
+
+        <!-- Seasons -->
+        <VBox spacing="4">
+            <Label text="Recommended Seasons" styleClass="section-title"/>
+            <FlowPane fx:id="seasonPane" hgap="8" vgap="8"/>
+        </VBox>
+
+        <!-- Suitability -->
+        <VBox spacing="4">
+            <Label text="Suitable For" styleClass="section-title"/>
+            <FlowPane fx:id="suitPane" hgap="8" vgap="8"/>
+        </VBox>
+
+        <!-- Alerts -->
+        <VBox spacing="4">
+            <Label text="Alerts" styleClass="section-title"/>
+            <Label fx:id="alertLabel" styleClass="alert-text"/>
+        </VBox>
+
+        <!-- Groups Section -->
+        <VBox spacing="6">
+            <HBox spacing="6" onMouseClicked="#toggleGroups">
+                <Label fx:id="groupsArrow" text="▸" styleClass="group-arrow"/>
+                <Label fx:id="groupsTitle" styleClass="section-title"/>
+            </HBox>
+            <VBox fx:id="groupsContainer" spacing="6" visible="false" managed="false"/>
+        </VBox>
+		<!-- Animals Section -->
+		<VBox spacing="6">
+		    <HBox spacing="6" onMouseClicked="#toggleAnimals">
+		        <Label fx:id="animalsArrow" text="▸" styleClass="group-arrow"/>
+		        <Label fx:id="animalsTitle" text="Animals You May Encounter" styleClass="section-title"/>
+		    </HBox>
+		
+		    <FlowPane fx:id="animalFlow"
+		              hgap="12" vgap="12"
+		              visible="false" managed="false"/>
+		</VBox>
+    </VBox>
+</ScrollPane>

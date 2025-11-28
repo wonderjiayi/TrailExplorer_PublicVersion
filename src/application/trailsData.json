@@ -1,0 +1,708 @@
+[
+  {
+    "name": "Echo Lake Loop",
+    "park": "Franconia Notch State Park",
+    "state": "NH",
+    "zipcode": "03251",
+    "topic": "LAKE",
+    "difficulty": "EASY",
+    "length": 2.4,
+    "visitHours": 1.5,
+    "elevationGain": 150,
+    "petFriendly": true,
+    "campingAllowed": false,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "REPTILE",
+      "AMPHIBIAN",
+      "BIRD"
+    ],
+    "commonAnimals": [
+      "Eastern Chipmunk",
+      "Painted Turtle"
+    ],
+    "relatedSpots": [
+      "Echo Lake Loop",
+      "Franconia Notch State Park"
+    ],
+    "seasons": [
+      "SPRING",
+      "SUMMER"
+    ],
+    "suitability": [
+      "FAMILY",
+      "HIKING"
+    ]
+  },
+  {
+    "name": "Mount Lafayette Summit",
+    "park": "Franconia Notch State Park",
+    "state": "NH",
+    "zipcode": "03251",
+    "topic": "MOUNTAIN",
+    "difficulty": "HARD",
+    "length": 8.9,
+    "visitHours": 6.5,
+    "elevationGain": 3900,
+    "petFriendly": true,
+    "campingAllowed": true,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "MAMMAL",
+      "BIRD"
+    ],
+    "commonAnimals": [
+      "Black Bear"
+    ],
+    "relatedSpots": [
+      "Mount Lafayette Summit",
+      "Franconia Notch State Park"
+    ],
+    "seasons": [
+      "SUMMER",
+      "FALL"
+    ],
+    "suitability": [
+      "HIKING",
+      "PHOTOGRAPHY"
+    ]
+  },
+  {
+    "name": "River Bend Path",
+    "park": "Middlesex Fells Reservation",
+    "state": "MA",
+    "zipcode": "02180",
+    "topic": "RIVER",
+    "difficulty": "MODERATE",
+    "length": 3.6,
+    "visitHours": 2.0,
+    "elevationGain": 250,
+    "petFriendly": true,
+    "campingAllowed": false,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "BIRD",
+      "AMPHIBIAN"
+    ],
+    "commonAnimals": [
+      "Bald Eagle",
+      "Great Blue Heron",
+      "Green Frog"
+    ],
+    "relatedSpots": [
+      "River Bend Path",
+      "Middlesex Fells Reservation"
+    ],
+    "seasons": [
+      "SPRING",
+      "SUMMER"
+    ],
+    "suitability": [
+      "FAMILY",
+      "HIKING"
+    ]
+  },
+  {
+    "name": "Beach Walk Trail",
+    "park": "Cape Cod National Seashore",
+    "state": "MA",
+    "zipcode": "02642",
+    "topic": "BEACH",
+    "difficulty": "EASY",
+    "length": 1.8,
+    "visitHours": 1.0,
+    "elevationGain": 20,
+    "petFriendly": false,
+    "campingAllowed": false,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "MAMMAL",
+      "BIRD"
+    ],
+    "commonAnimals": [
+      "Harbor Seal"
+    ],
+    "relatedSpots": [
+      "Beach Walk Trail",
+      "Cape Cod National Seashore"
+    ],
+    "seasons": [
+      "SUMMER"
+    ],
+    "suitability": [
+      "FAMILY",
+      "RELAX"
+    ]
+  },
+  {
+    "name": "Wildlife Ridge Trail",
+    "park": "White Mountain National Forest",
+    "state": "NH",
+    "zipcode": "03246",
+    "topic": "MOUNTAIN",
+    "difficulty": "MODERATE",
+    "length": 5.2,
+    "visitHours": 3.0,
+    "elevationGain": 1200,
+    "petFriendly": true,
+    "campingAllowed": true,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "MAMMAL",
+      "BIRD"
+    ],
+    "commonAnimals": [
+      "Snowshoe Hare",
+      "Black Bear"
+    ],
+    "relatedSpots": [
+      "Wildlife Ridge Trail",
+      "White Mountain National Forest"
+    ],
+    "seasons": [
+      "SUMMER",
+      "FALL"
+    ],
+    "suitability": [
+      "HIKING",
+      "PHOTOGRAPHY"
+    ]
+  },
+  {
+    "name": "Pine Hill Nature Walk",
+    "park": "Pine Hill Preserve",
+    "state": "MA",
+    "zipcode": "01923",
+    "topic": "FOREST",
+    "difficulty": "EASY",
+    "length": 1.5,
+    "visitHours": 1.0,
+    "elevationGain": 50,
+    "petFriendly": true,
+    "campingAllowed": false,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "MAMMAL",
+      "BIRD"
+    ],
+    "commonAnimals": [
+      "Red Fox",
+      "Eastern Chipmunk"
+    ],
+    "relatedSpots": [
+      "Pine Hill Preserve",
+      "Pine Hill Nature Walk"
+    ],
+    "seasons": [
+      "SUMMER",
+      "FALL"
+    ],
+    "suitability": [
+      "HIKING",
+      "PHOTOGRAPHY"
+    ]
+  },
+  {
+    "name": "Bear Brook Trail",
+    "park": "Bear Brook State Park",
+    "state": "NH",
+    "zipcode": "03032",
+    "topic": "RIVER",
+    "difficulty": "MODERATE",
+    "length": 4.8,
+    "visitHours": 2.5,
+    "elevationGain": 600,
+    "petFriendly": true,
+    "campingAllowed": true,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "BIRD",
+      "AMPHIBIAN"
+    ],
+    "commonAnimals": [
+      "Blue Jay",
+      "Bald Eagle",
+      "Great Blue Heron",
+      "Green Frog"
+    ],
+    "relatedSpots": [
+      "Bear Brook Trail",
+      "Bear Brook State Park"
+    ],
+    "seasons": [
+      "SPRING",
+      "SUMMER"
+    ],
+    "suitability": [
+      "FAMILY",
+      "HIKING"
+    ]
+  },
+  {
+    "name": "Cannon Cliff Route",
+    "park": "Franconia Notch State Park",
+    "state": "NH",
+    "zipcode": "03251",
+    "topic": "MOUNTAIN",
+    "difficulty": "HARD",
+    "length": 6.3,
+    "visitHours": 4.5,
+    "elevationGain": 2900,
+    "petFriendly": false,
+    "campingAllowed": false,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "MAMMAL"
+    ],
+    "commonAnimals": [
+      "Snowshoe Hare"
+    ],
+    "relatedSpots": [
+      "Cannon Cliff Route",
+      "Franconia Notch State Park"
+    ],
+    "seasons": [
+      "SUMMER",
+      "FALL"
+    ],
+    "suitability": [
+      "HIKING",
+      "PHOTOGRAPHY"
+    ]
+  },
+  {
+    "name": "Seaside Boardwalk",
+    "park": "Revere Beach Reservation",
+    "state": "MA",
+    "zipcode": "02151",
+    "topic": "BEACH",
+    "difficulty": "EASY",
+    "length": 2.0,
+    "visitHours": 1.2,
+    "elevationGain": 10,
+    "petFriendly": true,
+    "campingAllowed": false,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "MAMMAL",
+      "BIRD"
+    ],
+    "commonAnimals": [
+      "Harbor Seal"
+    ],
+    "relatedSpots": [
+      "Seaside Boardwalk",
+      "Revere Beach"
+    ],
+    "seasons": [
+      "SUMMER"
+    ],
+    "suitability": [
+      "FAMILY",
+      "RELAX"
+    ]
+  },
+  {
+      "name": "Zion Canyon Overlook Trail",
+      "park": "Zion National Park",
+      "state": "UT",
+      "zipcode": "84767",
+      "topic": "MOUNTAIN",
+      "difficulty": "MODERATE",
+      "length": 1.0,
+      "visitHours": 1.0,
+      "elevationGain": 187,
+      "petFriendly": false,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": [
+        "MAMMAL",
+        "BIRD",
+        "REPTILE"
+      ],
+      "commonAnimals": [
+        "Desert Bighorn Sheep",
+        "Raven",
+        "Collared Lizard"
+      ],
+      "relatedSpots": [
+        "Zion Canyon",
+        "Zion Overlook Trail"
+      ],
+      "seasons": [
+        "SPRING",
+        "FALL"
+      ],
+      "suitability": [
+        "HIKING",
+        "PHOTOGRAPHY"
+      ]
+    },
+    {
+      "name": "Devils Bridge Trail",
+      "park": "Coconino National Forest",
+      "state": "AZ",
+      "zipcode": "86336",
+      "topic": "MOUNTAIN",
+      "difficulty": "MODERATE",
+      "length": 4.2,
+      "visitHours": 3.0,
+      "elevationGain": 500,
+      "petFriendly": true,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": [
+        "MAMMAL",
+        "BIRD",
+        "REPTILE"
+      ],
+      "commonAnimals": [
+        "Coyote",
+        "Raven",
+        "Western Diamondback Rattlesnake"
+      ],
+      "relatedSpots": [
+        "Devils Bridge",
+        "Sedona Red Rocks"
+      ],
+      "seasons": [
+        "SPRING",
+        "FALL"
+      ],
+      "suitability": [
+        "HIKING",
+        "PHOTOGRAPHY"
+      ]
+    },
+    {
+      "name": "Yosemite Mist Trail",
+      "park": "Yosemite National Park",
+      "state": "CA",
+      "zipcode": "95389",
+      "topic": "RIVER",
+      "difficulty": "HARD",
+      "length": 7.0,
+      "visitHours": 5.0,
+      "elevationGain": 2100,
+      "petFriendly": false,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": [
+        "MAMMAL",
+        "BIRD"
+      ],
+      "commonAnimals": [
+        "Black Bear",
+        "Mule Deer"
+      ],
+      "relatedSpots": [
+        "Vernal Falls",
+        "Nevada Falls"
+      ],
+      "seasons": [
+        "SPRING",
+        "SUMMER"
+      ],
+      "suitability": [
+        "HIKING",
+        "PHOTOGRAPHY"
+      ]
+    },
+    {
+      "name": "Pacific Coast Bluff Trail",
+      "park": "Point Reyes National Seashore",
+      "state": "CA",
+      "zipcode": "94956",
+      "topic": "BEACH",
+      "difficulty": "EASY",
+      "length": 3.8,
+      "visitHours": 2.0,
+      "elevationGain": 250,
+      "petFriendly": false,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": [
+        "BIRD",
+        "MAMMAL"
+      ],
+      "commonAnimals": [
+        "Harbor Seal",
+        "Tule Elk",
+        "Peregrine Falcon"
+      ],
+      "relatedSpots": [
+        "Point Reyes",
+        "Chimney Rock Overlook"
+      ],
+      "seasons": [
+        "SPRING",
+        "SUMMER",
+        "FALL"
+      ],
+      "suitability": [
+        "HIKING",
+        "RELAX",
+        "PHOTOGRAPHY"
+      ]
+    },
+    {
+      "name": "Horseshoe Bend Rim Trail",
+      "park": "Glen Canyon National Recreation Area",
+      "state": "AZ",
+      "zipcode": "86040",
+      "topic": "RIVER",
+      "difficulty": "EASY",
+      "length": 1.5,
+      "visitHours": 1.0,
+      "elevationGain": 150,
+      "petFriendly": true,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": [
+        "BIRD",
+        "MAMMAL",
+        "REPTILE"
+      ],
+      "commonAnimals": [
+        "Raven",
+        "Desert Cottontail",
+        "Sidewinder"
+      ],
+      "relatedSpots": [
+        "Horseshoe Bend",
+        "Glen Canyon"
+      ],
+      "seasons": [
+        "SPRING",
+        "FALL"
+      ],
+      "suitability": [
+        "FAMILY",
+        "PHOTOGRAPHY"
+      ]
+    },
+  {
+    "name": "Great Brook Farm Loop",
+    "park": "Great Brook Farm State Park",
+    "state": "MA",
+    "zipcode": "01741",
+    "topic": "FOREST",
+    "difficulty": "MODERATE",
+    "length": 3.2,
+    "visitHours": 2.0,
+    "elevationGain": 200,
+    "petFriendly": true,
+    "campingAllowed": false,
+	"wildAnimalPossible":true,
+    "animalGroups": [
+      "MAMMAL",
+      "BIRD"
+    ],
+    "commonAnimals": [
+      "Red Fox",
+      "Blue Jay"
+    ],
+    "relatedSpots": [
+      "Great Brook Farm",
+      "Great Brook Farm Loop"
+    ],
+    "seasons": [
+      "SUMMER",
+      "FALL"
+    ],
+    "suitability": [
+      "HIKING",
+      "PHOTOGRAPHY"
+    ]
+  },
+  {
+      "name": "Mirror Lake Loop",
+      "park": "Yosemite National Park",
+      "state": "CA",
+      "zipcode": "95389",
+      "topic": "LAKE",
+      "difficulty": "EASY",
+      "length": 2.6,
+      "visitHours": 1.5,
+      "elevationGain": 150,
+      "petFriendly": false,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": ["MAMMAL", "BIRD"],
+      "commonAnimals": ["Mule Deer", "Steller's Jay"],
+      "relatedSpots": ["Mirror Lake", "Tenaya Canyon"],
+      "seasons": ["SPRING", "SUMMER"],
+      "suitability": ["FAMILY", "HIKING"]
+    },
+    {
+      "name": "Angels Landing Trail",
+      "park": "Zion National Park",
+      "state": "UT",
+      "zipcode": "84737",
+      "topic": "MOUNTAIN",
+      "difficulty": "HARD",
+      "length": 5.4,
+      "visitHours": 4.0,
+      "elevationGain": 1500,
+      "petFriendly": false,
+      "campingAllowed": true,
+      "wildAnimalPossible": true,
+      "animalGroups": ["MAMMAL", "BIRD"],
+      "commonAnimals": ["Bighorn Sheep", "California Condor"],
+      "relatedSpots": ["Scout Lookout", "Angels Landing"],
+      "seasons": ["SPRING", "FALL"],
+      "suitability": ["HIKING", "ADVENTURE"]
+    },
+    {
+      "name": "Emerald Pools Trail",
+      "park": "Zion National Park",
+      "state": "UT",
+      "zipcode": "84737",
+      "topic": "RIVER",
+      "difficulty": "MODERATE",
+      "length": 3.0,
+      "visitHours": 2.0,
+      "elevationGain": 450,
+      "petFriendly": false,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": ["AMPHIBIAN", "BIRD"],
+      "commonAnimals": ["Canyon Tree Frog", "Red-tailed Hawk"],
+      "relatedSpots": ["Emerald Pools", "Virgin River"],
+      "seasons": ["SPRING", "SUMMER"],
+      "suitability": ["FAMILY", "HIKING"]
+    },
+    {
+      "name": "Cathedral Rock Trail",
+      "park": "Coconino National Forest",
+      "state": "AZ",
+      "zipcode": "86336",
+      "topic": "MOUNTAIN",
+      "difficulty": "MODERATE",
+      "length": 1.4,
+      "visitHours": 1.5,
+      "elevationGain": 700,
+      "petFriendly": true,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": ["MAMMAL", "REPTILE"],
+      "commonAnimals": ["Rock Squirrel", "Desert Whiptail"],
+      "relatedSpots": ["Cathedral Rock", "Oak Creek"],
+      "seasons": ["SPRING", "FALL"],
+      "suitability": ["HIKING", "PHOTOGRAPHY"]
+    },
+    {
+      "name": "Horseshoe Bend Rim Trail",
+      "park": "Glen Canyon National Recreation Area",
+      "state": "AZ",
+      "zipcode": "86040",
+      "topic": "RIVER",
+      "difficulty": "EASY",
+      "length": 1.5,
+      "visitHours": 1.0,
+      "elevationGain": 120,
+      "petFriendly": true,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": ["BIRD"],
+      "commonAnimals": ["Peregrine Falcon"],
+      "relatedSpots": ["Horseshoe Bend", "Colorado River"],
+      "seasons": ["SPRING", "FALL"],
+      "suitability": ["FAMILY", "PHOTOGRAPHY"]
+    },
+    {
+      "name": "Multnomah Falls Trail",
+      "park": "Columbia River Gorge Scenic Area",
+      "state": "OR",
+      "zipcode": "97014",
+      "topic": "FOREST",
+      "difficulty": "MODERATE",
+      "length": 2.4,
+      "visitHours": 2.0,
+      "elevationGain": 870,
+      "petFriendly": true,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": ["BIRD", "MAMMAL"],
+      "commonAnimals": ["Northern Flicker", "Chipmunk"],
+      "relatedSpots": ["Multnomah Falls", "Benson Bridge"],
+      "seasons": ["SPRING", "SUMMER", "FALL"],
+      "suitability": ["HIKING", "FAMILY"]
+    },
+    {
+      "name": "Mount Rainier Skyline Loop",
+      "park": "Mount Rainier National Park",
+      "state": "WA",
+      "zipcode": "98304",
+      "topic": "MOUNTAIN",
+      "difficulty": "HARD",
+      "length": 5.5,
+      "visitHours": 4.0,
+      "elevationGain": 1700,
+      "petFriendly": false,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": ["MAMMAL", "BIRD"],
+      "commonAnimals": ["Mountain Goat", "Hoary Marmot"],
+      "relatedSpots": ["Paradise", "Skyline Loop Trail"],
+      "seasons": ["SUMMER"],
+      "suitability": ["HIKING", "PHOTOGRAPHY"]
+    },
+    {
+      "name": "Sand Dunes Boardwalk",
+      "park": "Great Sand Dunes National Park",
+      "state": "CO",
+      "zipcode": "81146",
+      "topic": "BEACH",
+      "difficulty": "EASY",
+      "length": 1.0,
+      "visitHours": 0.8,
+      "elevationGain": 30,
+      "petFriendly": true,
+      "campingAllowed": true,
+      "wildAnimalPossible": true,
+      "animalGroups": ["REPTILE", "MAMMAL"],
+      "commonAnimals": ["Kangaroo Rat", "Side-blotched Lizard"],
+      "relatedSpots": ["Main Dunes", "Medano Creek"],
+      "seasons": ["SUMMER"],
+      "suitability": ["FAMILY", "RELAX"]
+    },
+    {
+      "name": "Lassen Peak Summit Trail",
+      "park": "Lassen Volcanic National Park",
+      "state": "CA",
+      "zipcode": "96063",
+      "topic": "MOUNTAIN",
+      "difficulty": "HARD",
+      "length": 5.0,
+      "visitHours": 4.0,
+      "elevationGain": 2000,
+      "petFriendly": false,
+      "campingAllowed": true,
+      "wildAnimalPossible": true,
+      "animalGroups": ["MAMMAL"],
+      "commonAnimals": ["Black Bear", "Marmot"],
+      "relatedSpots": ["Lassen Peak", "Devastated Area"],
+      "seasons": ["SUMMER", "FALL"],
+      "suitability": ["HIKING", "ADVENTURE"]
+    },
+    {
+      "name": "Bumpass Hell Geothermal Trail",
+      "park": "Lassen Volcanic National Park",
+      "state": "CA",
+      "zipcode": "96063",
+      "topic": "FOREST",
+      "difficulty": "MODERATE",
+      "length": 3.0,
+      "visitHours": 2.5,
+      "elevationGain": 500,
+      "petFriendly": false,
+      "campingAllowed": false,
+      "wildAnimalPossible": true,
+      "animalGroups": ["BIRD"],
+      "commonAnimals": ["Clark's Nutcracker"],
+      "relatedSpots": ["Bumpass Hell", "Sulphur Works"],
+      "seasons": ["SUMMER", "FALL"],
+      "suitability": ["HIKING", "NATURE"]
+    }
+]

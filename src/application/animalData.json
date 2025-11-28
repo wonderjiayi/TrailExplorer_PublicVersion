@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "Red Fox",
+    "group": "MAMMAL",
+    "habitat": "FOREST",
+    "icon": "/icons/red_fox.png",
+    "image": "/images/animals/red_fox.jpg",
+    "activeMonths": [3, 4, 5, 10, 11],
+    "activeDays": [4, 5, 6, 7, 21, 22],
+    "recentSpots": ["Great Brook Farm", "Pine Hill Preserve"],
+    "description": "Red foxes are agile mammals known for their keen hearing and ability to adapt to various environments. Commonly found in forests and grasslands."
+  },
+  {
+    "id": 2,
+    "name": "Blue Jay",
+    "group": "BIRD",
+    "habitat": "FOREST",
+    "icon": "/icons/blue_jay.png",
+    "image": "/images/animals/blue_jay.jpg",
+    "activeMonths": [4, 5, 6, 7, 9],
+    "activeDays": [8, 9, 12, 13, 24],
+    "recentSpots": ["Great Brook Farm", "Bear Brook Trail"],
+    "description": "Blue Jays are intelligent and noisy birds often seen in forests. They are recognized by their bright blue feathers and loud calls."
+  },
+  {
+    "id": 3,
+    "name": "Eastern Chipmunk",
+    "group": "MAMMAL",
+    "habitat": "FOREST",
+    "icon": "/icons/chipmunk.png",
+    "image": "/images/animals/chipmunk.jpg",
+    "activeMonths": [3, 4, 5, 6, 9],
+    "activeDays": [5, 6, 7, 8, 20, 21],
+    "recentSpots": ["Pine Hill Preserve", "Echo Lake Loop"],
+    "description": "Small and fast rodents known for storing food in their cheek pouches. Chipmunks are active during daytime in forest areas."
+  },
+  {
+    "id": 4,
+    "name": "Painted Turtle",
+    "group": "REPTILE",
+    "habitat": "LAKE",
+    "icon": "/icons/painted_turtle.png",
+    "image": "/images/animals/painted_turtle.jpg",
+    "activeMonths": [5, 6, 7, 8],
+    "activeDays": [3, 4, 11, 18, 25],
+    "recentSpots": ["Echo Lake Loop", "Crystal Lake Trail"],
+    "description": "Painted turtles are freshwater reptiles often seen basking on logs near lakes and ponds. Recognized by their colorful shell patterns."
+  },
+  {
+    "id": 5,
+    "name": "Bald Eagle",
+    "group": "BIRD",
+    "habitat": "RIVER",
+    "icon": "/icons/bald_eagle.png",
+    "image": "/images/animals/bald_eagle.jpg",
+    "activeMonths": [1, 2, 3, 10, 11, 12],
+    "activeDays": [2, 5, 9, 20, 29],
+    "recentSpots": ["River Bend Path", "Bear Brook Trail"],
+    "description": "A powerful bird of prey known for its striking white head and tail. Often found near large bodies of water where it hunts fish."
+  },
+  {
+    "id": 6,
+    "name": "Great Blue Heron",
+    "group": "BIRD",
+    "habitat": "RIVER",
+    "icon": "/icons/blue_heron.png",
+    "image": "/images/animals/blue_heron.jpg",
+    "activeMonths": [4, 5, 6, 8, 9],
+    "activeDays": [10, 11, 12, 18, 23],
+    "recentSpots": ["River Bend Path", "Bear Brook Trail"],
+    "description": "Tall wading birds found along rivers and wetlands. They stand motionless for long periods while hunting fish."
+  },
+  {
+    "id": 7,
+    "name": "Harbor Seal",
+    "group": "MAMMAL",
+    "habitat": "BEACH",
+    "icon": "/icons/harbor_seal.png",
+    "image": "/images/animals/harbor_seal.jpg",
+    "activeMonths": [5, 6, 7, 8],
+    "activeDays": [1, 4, 10, 16, 30],
+    "recentSpots": ["Seaside Boardwalk", "Beach Walk Trail"],
+    "description": "Marine mammals often seen resting on sandy beaches. Harbor seals are playful and excellent swimmers."
+  },
+  {
+    "id": 8,
+    "name": "Green Frog",
+    "group": "AMPHIBIAN",
+    "habitat": "RIVER",
+    "icon": "/icons/green_frog.png",
+    "image": "/images/animals/green_frog.jpg",
+    "activeMonths": [4, 5, 6, 7, 8],
+    "activeDays": [6, 9, 12, 15, 27],
+    "recentSpots": ["Bear Brook Trail", "River Bend Path"],
+    "description": "Green frogs live near wetlands and rivers. Their calls are deep and loud, resembling the sound of a plucked banjo string."
+  },
+  {
+    "id": 9,
+    "name": "Snowshoe Hare",
+    "group": "MAMMAL",
+    "habitat": "MOUNTAIN",
+    "icon": "/icons/snowshoe_hare.png",
+    "image": "/images/animals/snowshoe_hare.jpg",
+    "activeMonths": [12, 1, 2],
+    "activeDays": [3, 6, 14, 22],
+    "recentSpots": ["Wildlife Ridge Trail", "Cannon Cliff Route"],
+    "description": "Known for its large hind feet that help it move quickly over snow, this hare changes fur color with the seasons."
+  },
+  {
+    "id": 10,
+    "name": "Black Bear",
+    "group": "MAMMAL",
+    "habitat": "MOUNTAIN",
+    "icon": "/icons/black_bear.png",
+    "image": "/images/animals/black_bear.jpg",
+    "activeMonths": [5, 6, 7, 8, 9],
+    "activeDays": [7, 8, 9, 15, 28],
+    "recentSpots": ["Mount Lafayette Summit", "Wildlife Ridge Trail"],
+    "description": "Black bears are omnivorous mammals found in mountainous forests. They are excellent climbers and strong swimmers."
+  }
+]
+

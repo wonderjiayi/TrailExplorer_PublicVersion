@@ -1,0 +1,76 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.TrailRecommendController"
+      spacing="20"
+      fillWidth="true"
+      style="-fx-background-color: #f5f7f8;">
+
+    <padding>
+        <Insets top="25" right="35" bottom="25" left="35"/>
+    </padding>
+
+<HBox alignment="CENTER_LEFT">
+    
+  <VBox spacing="8">
+
+    <Label text="Recommended Trails"
+           style="-fx-font-size: 26px; -fx-font-weight: bold;"/>
+           
+
+    <Pane HBox.hgrow="ALWAYS"/>
+    <Button fx:id="sortButton" text="Sort"
+            style="-fx-background-color: #4a7c59; -fx-text-fill: white;
+                   -fx-font-weight: bold; -fx-padding: 6 18;
+                   -fx-background-radius: 8;"/>
+  </VBox>
+</HBox>
+
+
+
+<FlowPane hgap="15" vgap="10"
+          prefWrapLength="900"
+          style="-fx-padding: 12; -fx-background-color: #ffffff;
+                 -fx-border-color: #ccd4d6; -fx-border-radius: 10; 
+                 -fx-background-radius: 10;"
+          alignment="TOP_LEFT">
+
+    <Label text="Difficulty:"/>
+    <ComboBox fx:id="difficultyFilter" prefWidth="140"/>
+
+    <!-- Pet Friendly -->
+    <CheckBox fx:id="petFilter" text="Pet Friendly"/>
+
+    <!-- Camping -->
+    <CheckBox fx:id="campFilter" text="Camping Allowed"/>
+    
+    <Pane minWidth="950"/>
+
+    <!-- Length -->
+    <Label text="Length ≤"/>
+    <TextField fx:id="maxLengthField" prefWidth="60" promptText="mi"/>
+
+    <!-- Apply -->
+    <Button fx:id="applyFilterBtn" text="Apply Filter"
+            style="-fx-background-color: #4a7c59; -fx-text-fill: white;
+                   -fx-font-weight: bold; -fx-background-radius: 8;"/>
+
+</FlowPane>
+
+    <ScrollPane fitToWidth="true" prefHeight="700">
+        <VBox fx:id="trailContainer" spacing="22"
+              style="-fx-padding: 10;"/>
+    </ScrollPane>
+
+</VBox>
+
+

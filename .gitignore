@@ -1,0 +1,25 @@
+/bin/
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+
+# Eclipse
+.settings/
+.project
+.classpath
+bin/
+target/
+
+# macOS
+.DS_Store
+
+# IntelliJ IDEA
+.idea/
+out/
+
+# JavaFX cache
+*.fxml~*

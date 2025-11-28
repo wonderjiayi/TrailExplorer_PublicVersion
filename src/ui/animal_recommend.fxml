@@ -1,0 +1,33 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.AnimalRecommendController"
+      spacing="20" alignment="TOP_CENTER"
+      style="-fx-padding: 20;">
+
+    <!-- 标题 -->
+    <Label fx:id="titleLabel"
+           style="-fx-font-size: 26px; -fx-font-weight: bold;"/>
+
+    <!-- 滚动区 -->
+    <ScrollPane fitToWidth="false"
+                style="-fx-background-color: transparent;"
+                pannable="true"
+                hbarPolicy="NEVER"
+                vbarPolicy="AS_NEEDED">
+
+        <content>
+            <!-- ⭐ 动物卡片流式布局 -->
+            <FlowPane fx:id="animalPane"
+                      hgap="15" vgap="20"
+                      alignment="TOP_LEFT"
+                      style="-fx-padding: 10 20 50 20;"/>
+        </content>
+
+    </ScrollPane>
+
+</VBox>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fitToWidth="true"
+            fitToHeight="true"
+            style="-fx-background-color: #f8f9fa;"
+            fx:controller="controller.AnimalController">
+
+    <content>
+        <VBox alignment="TOP_CENTER" spacing="25"
+              style="-fx-background-color: #f8f9fa; -fx-font-family: 'Segoe UI';">
+
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <!-- 🧭 页面标题 -->
+            <Label text="Explore Wildlife Trails 🐾"
+                   style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2f4f4f;" />
+
+
+            <!-- ⭐ 动物 Group 卡片区（居中）-->
+            <VBox spacing="12" alignment="TOP_CENTER">
+                <Label text="Discover by Animal Group:"
+                       style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #3a4a3f;" />
+
+                <FlowPane fx:id="animalGroupPane"
+                          alignment="CENTER"
+                          hgap="12" vgap="12"
+                          prefWrapLength="380"
+                          style="-fx-padding: 5 5 0 5;" />
+            </VBox>
+
+
+            <!-- 📅 月份活动日历区 -->
+            <VBox spacing="0" alignment="TOP_CENTER" prefWidth="460"
+                  style="-fx-background-color: white; -fx-border-color: #4a7c59; -fx-border-width: 2;
+                         -fx-border-radius: 12; -fx-background-radius: 12; -fx-padding: 15;">
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Seasonal Activity Calendar"
+                           style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #2f4f4f;">
+                        <HBox.hgrow>ALWAYS</HBox.hgrow>
+                    </Label>
+
+                    <VBox alignment="CENTER_RIGHT" spacing="3">
+                        <Label text="Month:"
+                               style="-fx-font-size: 11px; -fx-text-fill: #666;" />
+                        <ComboBox fx:id="monthSelector"
+                                  prefWidth="100"
+                                  style="-fx-font-size: 12px;" />
+                    </VBox>
+                </HBox>
+
+                <GridPane fx:id="calendarGrid"
+                          hgap="4" vgap="4"
+                          alignment="CENTER"
+                          style="-fx-padding: 15 10 10 10;" />
+
+                <Label text="(Hover and click a day to view active animals)"
+                       style="-fx-font-size: 11px; -fx-text-fill: #888; -fx-padding: 5 0 0 0;" />
+            </VBox>
+
+
+            <!-- 🗺️ 地图区域 -->
+            <VBox spacing="0" alignment="TOP_CENTER" prefWidth="460"
+                  style="-fx-background-color: white; -fx-border-color: #4a7c59; -fx-border-width: 2;
+                         -fx-border-radius: 12; -fx-background-radius: 12; -fx-padding: 15;">
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Habitat Map"
+                           style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #2f4f4f;">
+                        <HBox.hgrow>ALWAYS</HBox.hgrow>
+                    </Label>
+
+                    <Region HBox.hgrow="ALWAYS" />
+
+                    <VBox alignment="CENTER_RIGHT" spacing="3">
+                        <Label text="Terrain:"
+                               style="-fx-font-size: 11px; -fx-text-fill: #666;" />
+                        <ComboBox fx:id="terrainSelector"
+                                  prefWidth="100"
+                                  style="-fx-font-size: 12px;" />
+                    </VBox>
+                </HBox>
+
+                <WebView fx:id="mapView"
+                         prefWidth="430"
+                         prefHeight="300"
+                         minHeight="300"
+                         maxHeight="300">
+                    <VBox.margin>
+                        <Insets top="15" />
+                    </VBox.margin>
+                </WebView>
+            </VBox>
+
+            <Region prefHeight="30"/>
+
+        </VBox>
+    </content>
+
+</ScrollPane>

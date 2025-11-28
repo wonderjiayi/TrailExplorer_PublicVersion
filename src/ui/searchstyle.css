@@ -1,0 +1,137 @@
+
+/* Mini buttons for Apply / Reset */
+.mini-btn {
+    -fx-background-color: #f2f2f7;
+    -fx-text-fill: #555;
+    -fx-padding: 4 12;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-font-size: 12px;
+}
+.mini-btn:hover {
+    -fx-background-color: #e5e5ea;
+}
+
+.mini-btn-primary {
+    -fx-background-color: #007aff;
+    -fx-text-fill: white;
+    -fx-padding: 4 14;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-font-size: 12px;
+}
+.mini-btn-primary:hover {
+    -fx-background-color: #0063ce;
+}
+
+/* Fold button (保留你原来的位置) */
+.collapse-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: #888;
+    -fx-padding: 2 4;
+}
+.collapse-button:hover {
+    -fx-text-fill: black;
+    -fx-opacity: 1.0;
+    -fx-cursor: hand;
+}
+
+
+
+.collapse-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888;
+    -fx-font-size: 14px;
+}
+.collapse-button:hover {
+    -fx-text-fill: black;
+}
+
+/* Tag chips */
+.tag-chip {
+    -fx-background-color: #d9eaff;
+    -fx-padding: 4 10;
+    -fx-background-radius: 12;
+    -fx-font-size: 12px;
+}
+
+/* 结果卡片 hover 动画 */
+.result-card {
+    -fx-background-color: white;
+    -fx-padding: 12;
+    -fx-background-radius: 10;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.result-card:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-effect: dropshadow(gaussian, #a0a0a0, 10, 0.2, 0, 2);
+}
+
+/* 超隐形折叠按钮（Apple 风格） */
+.collapse-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-font-size: 12px;
+    -fx-text-fill: #B0B0B0;
+    -fx-padding: 2 4 2 4;
+    -fx-opacity: 0.6;
+}
+
+.collapse-button:hover {
+    -fx-text-fill: #707070;
+    -fx-opacity: 1.0;
+    -fx-cursor: hand;
+}
+
+.collapse-button:pressed {
+    -fx-text-fill: black;
+    -fx-opacity: 1.0;
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+/* 迷你按钮风格（Reset / Apply） */
+.mini-btn {
+    -fx-background-color: #f2f2f7;
+    -fx-text-fill: #555;
+    -fx-padding: 4 12;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-font-size: 12px;
+}
+.mini-btn:hover {
+    -fx-background-color: #e5e5ea;
+}
+
+.mini-btn-primary {
+    -fx-background-color: #007aff;
+    -fx-text-fill: white;
+    -fx-padding: 4 14;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-font-size: 12px;
+}
+.mini-btn-primary:hover {
+    -fx-background-color: #0063ce;
+}
+
+.collapse-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-font-size: 12px;
+    -fx-text-fill: #B0B0B0;
+    -fx-padding: 0 4;
+    -fx-opacity: 0.7;
+}
+.collapse-button:hover {
+    -fx-text-fill: #707070;
+    -fx-opacity: 1.0;
+}
+

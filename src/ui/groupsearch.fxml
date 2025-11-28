@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.GroupController"
+            prefWidth="430" prefHeight="900">
+
+    <top>
+        <HBox fx:id="topSearchBar" spacing="10" alignment="CENTER_LEFT">
+            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+            <TextField fx:id="keywordField" promptText="Search groups or trails..." HBox.hgrow="ALWAYS"/>
+            <Button text="🔍" onAction="#onKeywordSearch"/>
+        </HBox>
+    </top>
+
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" pannable="true">
+            <content>
+                <VBox spacing="16" fillWidth="true">
+                    <padding><Insets top="0" right="20" bottom="20" left="20"/></padding>
+
+                    <!-- advanced search -->
+            <TitledPane fx:id="advancedPane" text="Advanced Search" expanded="false">
+    			<content>
+                    <VBox spacing="12" fillWidth="true"
+                          style="-fx-background-color: #FFFFFF; -fx-background-radius: 12; -fx-padding: 12;">
+
+                        <!-- 1) Topic -->
+                        <VBox spacing="6" fillWidth="true">
+                            <Label text="Topic"/>
+                            <ComboBox fx:id="topicCombo" promptText="Any" maxWidth="Infinity"/>
+                        </VBox>
+
+                        <!-- 2) Difficulty -->
+                        <VBox spacing="6" fillWidth="true">
+                            <Label text="Difficulty"/>
+                            <ComboBox fx:id="difficultyCombo" promptText="Any" maxWidth="Infinity"/>
+                        </VBox>
+
+                        <!-- 3) Bird Spotted -->
+                        <CheckBox fx:id="petBox" text="Pet Friendly"/>
+
+                        <!-- 4) Max Visit Hours -->
+                        <VBox spacing="6" fillWidth="true">
+                            <Label text="Max Visit Hours"/>
+                            <Spinner fx:id="maxHoursSpinner" editable="true" maxWidth="Infinity"/>
+                        </VBox>
+
+                        <!-- 5) Your Party Size -->
+                        <VBox spacing="6" fillWidth="true">
+                            <Label text="Your Party Size"/>
+                            <Spinner fx:id="joinPartySizeSpinner" editable="true" maxWidth="Infinity"/>
+                        </VBox>
+
+
+                        <Button text="Search" onAction="#onAdvancedSearch" maxWidth="Infinity"/>
+                    </VBox>
+                </content>
+			</TitledPane>
+
+                    <!-- create -->
+                    <Button fx:id="createBtn" text="+ Create a Group" onAction="#onCreateGroupClicked" maxWidth="Infinity"/>
+
+                    <Label text="Recommended Groups" style="-fx-font-weight: bold; -fx-font-size: 14px;"/>
+
+					<VBox fx:id="recommendedPane" spacing="12" fillWidth="true"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+
+</BorderPane>
+
+
+
+

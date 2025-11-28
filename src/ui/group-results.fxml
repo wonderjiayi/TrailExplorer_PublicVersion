@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.GroupResultsController" prefWidth="430" prefHeight="900">
+
+    <top>
+        <VBox spacing="4">
+            <padding><Insets top="12" right="16" bottom="8" left="16"/></padding>
+            <Label fx:id="titleLabel" text="Results" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+            <Label fx:id="subtitleLabel" text="Trail • Groups" style="-fx-text-fill:#666;"/>
+        </VBox>
+
+        <HBox spacing="8" alignment="CENTER_LEFT">
+            <Button text="← Back" onAction="#onBack"/>
+            <VBox spacing="2">
+                <Label fx:id="titleLabel" text="Results"
+                       style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+                <Label fx:id="subtitleLabel" text="Trail • Groups" style="-fx-text-fill:#666;"/>
+            </VBox>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+            <content>
+                <VBox fx:id="listPane" spacing="12" fillWidth="true">
+                    <padding><Insets top="8" right="16" bottom="24" left="16"/></padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+    
+</BorderPane>
+
+
+
+
+

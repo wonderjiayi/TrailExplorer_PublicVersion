@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.MineController"
+            prefWidth="430" prefHeight="720">
+
+    <top>
+        <Label text="Mine"
+               style="-fx-font-size:16px; -fx-font-weight:bold;">
+            <padding>
+                <Insets top="16" right="16" bottom="8" left="16"/>
+            </padding>
+        </Label>
+    </top>
+
+    <center>
+        <VBox spacing="14" alignment="CENTER_LEFT" fillWidth="true">
+            <padding>
+                <Insets top="12" right="16" bottom="16" left="16"/>
+            </padding>
+
+            <!-- Username -->
+            <Label text="Username" style="-fx-text-fill:#666;"/>
+            <Label fx:id="usernameLabel" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+
+            <Separator/>
+            <Button text="My Groups" onAction="#goMyGroups" maxWidth="Infinity"/>
+
+            <!-- Trail Preferences -->
+            <Label text="Trail Preferences"
+                   style="-fx-font-size:14px; -fx-font-weight:bold;"/>
+
+            <HBox spacing="10">
+                <Label text="Target Length:"/>
+                <TextField fx:id="lengthField" promptText="miles"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Difficulty:"/>
+                <ComboBox fx:id="difficultyBox"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Topic:"/>
+                <ComboBox fx:id="topicBox"/>
+            </HBox>
+
+            <CheckBox fx:id="petCheck" text="Pet Friendly"/>
+            <CheckBox fx:id="campCheck" text="Camping Allowed"/>
+            <CheckBox fx:id="wildlifeCheck" text="Wild Life Preference" />
+
+            <Button text="Save Preferences"
+                    onAction="#savePreferences"
+                    style="-fx-background-color:#4CAF50; -fx-text-fill:white;"
+                    maxWidth="Infinity"/>
+
+            <Separator/>
+
+            <!-- recommend -->
+            <Button text="Get Personalized Trails"
+                    onAction="#recommendTrails"
+                    style="-fx-background-color:#2196F3; -fx-text-fill:white;"
+                    maxWidth="Infinity"/>
+
+            <Button text="Logout"
+                    onAction="#onLogout"
+                    maxWidth="Infinity"/>
+        </VBox>
+    </center>
+</BorderPane>

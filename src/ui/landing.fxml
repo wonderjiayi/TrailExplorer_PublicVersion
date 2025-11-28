@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.LandingController"
+      spacing="18" style="-fx-padding:20;">
+
+    <!-- searchInput -->
+    <HBox spacing="10">
+        <TextField fx:id="searchInput" promptText="Search trails..." />
+        <Button text="🔍" onAction="#onSearchClicked"/>
+    </HBox>
+
+    <!-- welcomeLabel -->
+    <Label fx:id="welcomeLabel"
+           style="-fx-font-size:22px; -fx-font-weight:bold;" />
+
+    <HBox fx:id="prefBanner"
+          alignment="CENTER_LEFT"
+          spacing="8"
+          onMouseClicked="#onPreferenceClick"
+          style="-fx-background-color:#f7f7f7; -fx-padding:10; -fx-border-color:#DDD; -fx-border-radius:10; -fx-background-radius:10; -fx-cursor: hand;">
+        <Label text="🎯 Preferences:" style="-fx-font-weight:bold;"/>
+        <Label fx:id="prefLabel" style="-fx-text-fill:#666;"/>
+        <Label text="✏️" style="-fx-font-size:14px; -fx-text-fill:#888;"/>
+    </HBox>
+
+    <!-- Recommended -->
+    <Label text="Recommended for you"
+           style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+
+    <!-- recommendedList -->
+    <VBox fx:id="recommendedList" spacing="6"/>
+
+    <!-- 4 functions button -->
+    <GridPane hgap="15" vgap="15">
+        <Button text="Nearby Popular"
+                onAction="#onNearbyPopularRecommend"
+                prefWidth="160" prefHeight="120"/>
+        <Button text="Personal"
+                onAction="#onPersonalRecommend"
+                prefWidth="160" prefHeight="120"
+                GridPane.columnIndex="1"/>
+
+        <Button text="Group"
+                onAction="#onGroupRecommend"
+                prefWidth="160" prefHeight="120"
+                GridPane.rowIndex="1"/>
+
+        <Button text="Find Wild Life"
+                onAction="#onAnimalRecommend"
+                prefWidth="160" prefHeight="120"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="1"/>
+    </GridPane>
+
+    <Button text="More ➜" onAction="#onSearchIconClicked"/>
+</VBox>

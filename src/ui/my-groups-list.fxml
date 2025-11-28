@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.MyGroupsListController" prefWidth="430" prefHeight="720">
+
+    <top>
+        <HBox spacing="8" alignment="CENTER_LEFT">
+            <padding><Insets top="12" right="16" bottom="8" left="16"/></padding>
+            <Button text="← Back" onAction="#goBack"/>
+            <Label fx:id="titleLabel" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+            <content>
+                <VBox fx:id="listPane" spacing="10" fillWidth="true">
+                    <padding><Insets top="8" right="16" bottom="16" left="16"/></padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
+
+
+
+

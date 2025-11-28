@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.SearchController"
+      spacing="16"
+      style="-fx-padding: 16;"
+      stylesheets="@searchstyle.css">
+
+    <HBox spacing="10">
+        <TextField fx:id="searchField"
+                   promptText="Search by name, park, state..."
+                   onAction="#onSearch"
+                   HBox.hgrow="ALWAYS"/>
+        <Button text="🔍" onAction="#onSearch"/>
+    </HBox>
+
+    <TitledPane fx:id="filtersPane"
+            text="Filter attributes"
+            expanded="true">
+
+    <content>
+        <VBox spacing="10" style="-fx-padding: 10 10 6 10;">
+
+            <!-- Topic & Difficulty -->
+            <HBox spacing="10">
+                <Label text="Topic" minWidth="80"/>
+                <ComboBox fx:id="topicBox" prefWidth="180"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Difficulty" minWidth="80"/>
+                <ComboBox fx:id="difficultyBox" prefWidth="180"/>
+            </HBox>
+
+            <!-- Length -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Max Length (mi)" minWidth="120"/>
+                <Slider fx:id="lengthSlider" min="1" max="15" blockIncrement="1" prefWidth="200"/>
+                <Label fx:id="lengthValueLabel" minWidth="60"/>
+            </HBox>
+
+            <!-- Hours -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Max Hours" minWidth="120"/>
+                <Slider fx:id="hoursSlider" min="1" max="10" blockIncrement="1" prefWidth="200"/>
+                <Label fx:id="hoursValueLabel" minWidth="60"/>
+            </HBox>
+
+            <!-- Elevation -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Max Elevation (ft)" minWidth="120"/>
+                <Slider fx:id="elevationSlider" min="0" max="4000" blockIncrement="200" prefWidth="200"/>
+                <Label fx:id="elevationValueLabel" minWidth="80"/>
+            </HBox>
+
+            <!-- Boolean attributes -->
+            <HBox spacing="14">
+                <CheckBox fx:id="petCheck" text="Pet friendly"/>
+                <CheckBox fx:id="campCheck" text="Camping allowed"/>
+                <CheckBox fx:id="wildlifeCheck" text="Wildlife possible"/>
+            </HBox>
+
+            <!-- Small action buttons -->
+            <HBox spacing="8" alignment="CENTER_RIGHT">
+                <Button text="Reset" onAction="#onResetFilters" styleClass="mini-btn"/>
+                <Button text="Apply" onAction="#onSearch" styleClass="mini-btn-primary"/>
+            </HBox>
+
+            <!-- Fold button -->
+            <HBox alignment="BOTTOM_RIGHT">
+                <Button fx:id="collapseBtn"
+                        text="▾"
+                        onAction="#toggleFilterCollapse"
+                        styleClass="collapse-button"/>
+            </HBox>
+
+        </VBox>
+    </content>
+</TitledPane>
+
+    <ScrollPane fitToWidth="true" prefHeight="500">
+        <content>
+            <VBox fx:id="resultsPreview"
+                  spacing="10"
+                  style="-fx-padding: 8;">
+            </VBox>
+        </content>
+    </ScrollPane>
+
+</VBox>

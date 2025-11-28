@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.ResultsController"
+      spacing="10" style="-fx-padding:16;"
+      stylesheets="@mainpage.css">
+
+    <Label fx:id="titleLabel"
+           text="Search Results"
+           style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+
+    <TextField fx:id="searchField" promptText="Search again..."/>
+
+    <ScrollPane fitToWidth="true">
+        <VBox fx:id="resultsList" spacing="8"/>
+    </ScrollPane>
+    
+</VBox>

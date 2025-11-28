@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- ⭐ 外层 ScrollPane（由 RootLayout 的 center 区域渲染），可滚动 ⭐ -->
+<ScrollPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fitToWidth="true"
+            fitToHeight="true"
+            style="-fx-background-color: transparent;"
+            fx:controller="controller.AnimalResultsController">
+
+    <content>
+ 
+        <!-- ⭐ 内层 VBox，保持原结构 ⭐ -->
+         <VBox alignment="TOP_CENTER"
+              spacing="20"
+              style="-fx-background-color: #f8f9fa; -fx-font-family: 'Segoe UI';"
+              maxWidth="Infinity">
+
+
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <!-- 🧭 标题区 -->
+            <Label fx:id="titleLabel"
+                   text="Animal Group:"
+                   style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #2f4f4f;" />
+
+            <Label fx:id="monthLabel"
+                   text="Month:"
+                   style="-fx-font-size: 14px; -fx-text-fill: #607d8b;" />
+
+            <!-- 🐾 动物列表容器（不再要外层 ScrollPane，否则会嵌套滚动） -->
+            <FlowPane fx:id="resultsPane"
+                      hgap="15" vgap="15"
+                      alignment="CENTER"
+                      prefWrapLength="400"
+                      style="-fx-padding: 10;" />
+
+            <!-- 🔙 底部按钮 -->
+            <Button fx:id="backButton"
+                    text="⏪ Back"
+                    prefWidth="150"
+                    onAction="#onBackClick"
+                    style="-fx-background-color: #cfd8dc;
+                           -fx-text-fill: #2f4f4f;
+                           -fx-font-weight: bold;" />
+
+        </VBox>
+      
+    </content>
+
+</ScrollPane>
+

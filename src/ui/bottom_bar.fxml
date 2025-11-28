@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.BottomBarController"
+      spacing="30"
+      alignment="CENTER"
+      styleClass="bottom-bar">
+
+    <VBox alignment="CENTER" spacing="2" styleClass="tab-item" onMouseClicked="#goMain">
+        <Label text="⌂" styleClass="tab-icon"/>
+        <Label text="Home" styleClass="tab-label"/>
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="2" styleClass="tab-item" onMouseClicked="#goTrail">
+        <Label text="🔍" styleClass="tab-icon"/>
+        <Label text="Trails" styleClass="tab-label"/>
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="2" styleClass="tab-item" onMouseClicked="#goAnimal">
+        <Label text="🐾" styleClass="tab-icon"/>
+        <Label text="Wildlife" styleClass="tab-label"/>
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="2" styleClass="tab-item" onMouseClicked="#goGroup">
+        <Label text="👥" styleClass="tab-icon"/>
+        <Label text="Groups" styleClass="tab-label"/>
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="2" styleClass="tab-item" onMouseClicked="#goMine">
+        <Label text="🙂" styleClass="tab-icon"/>
+        <Label text="Mine" styleClass="tab-label"/>
+    </VBox>
+
+</HBox>

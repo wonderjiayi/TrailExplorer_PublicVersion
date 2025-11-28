@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.GroupDetailController" prefWidth="430" prefHeight="900">
+
+    <top>
+        <Label text="Group Detail" style="-fx-font-size:16px; -fx-font-weight:bold;">
+            <padding><Insets top="16" right="16" bottom="8" left="16"/></padding>
+        </Label>
+
+        <HBox spacing="8" alignment="CENTER_LEFT">
+            <Button text="← Back" onAction="#onBack"/>
+            <VBox spacing="2">
+                <Label fx:id="titleLabel" text="Results"
+                       style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+                <Label fx:id="subtitleLabel" text="Trail • Groups" style="-fx-text-fill:#666;"/>
+            </VBox>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+            <content>
+                <VBox spacing="10" fillWidth="true">
+                    <padding><Insets top="8" right="16" bottom="24" left="16"/></padding>
+
+                    <Label fx:id="titleLabel" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+                    <Label fx:id="metaLabel"  style="-fx-text-fill:#666;"/>
+
+					<!-- Trail -->
+<TitledPane text="Trail Info" expanded="true">
+    <content>
+        <GridPane hgap="10" vgap="6">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" minWidth="90"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <Label text="Name:"      GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label fx:id="trailName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Topic:"      GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label fx:id="trailTopic" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Difficulty:"      GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label fx:id="trailDiff"       GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Visit Hours:"     GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label fx:id="trailHours"      GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Pet Friendly:"    GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label fx:id="trailPet"       GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</TitledPane>
+
+<!-- Group  -->
+<TitledPane text="Group Info" expanded="true">
+    <content>
+        <GridPane hgap="10" vgap="6">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" minWidth="90"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <Label text="Start Time:"  GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label fx:id="groupStart"  GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Capacity:"    GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label fx:id="groupCap"    GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Current:"     GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label fx:id="groupCur"    GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Remaining:"   GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label fx:id="groupRemain" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</TitledPane>
+					
+                    <TitledPane text="Members" expanded="true">
+                        <content>
+                            <VBox fx:id="membersPane" spacing="6" fillWidth="true"/>
+                        </content>
+                    </TitledPane>
+
+                    <HBox spacing="10">
+                        <Label text="Join as"/>
+                        <Spinner fx:id="joinSpinner" editable="true" maxWidth="120"/>
+                        <Region HBox.hgrow="ALWAYS"/>
+                        <Button text="Join" onAction="#onJoin"/>
+                    </HBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
+
+
+
+
+

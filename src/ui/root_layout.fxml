@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.fxml.FXML?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.RootLayoutController"
+            stylesheets="@mainpage.css"
+            styleClass="root-background">
+
+    <!-- iOS Navigation Bar Style -->
+    <top>
+        <HBox alignment="CENTER"
+              styleClass="nav-bar">
+            <Label fx:id="pageTitle" text="Trail Explorer" styleClass="nav-title"/>
+        </HBox>
+    </top>
+
+    <center>
+        <StackPane fx:id="contentArea"
+                   styleClass="content-area"/>
+    </center>
+
+    <!-- bottom_bar.fxml include -->
+    <bottom>
+        <fx:include source="bottom_bar.fxml"/>
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.WebView?>
+
+<!-- ✅ 外层 ScrollPane -->
+<ScrollPane xmlns="http://javafx.com/javafx/8" 
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.AnimalDetailController"
+            fitToWidth="true"
+            fitToHeight="true"
+            style="-fx-background: #f8f9fa; -fx-background-color: #f8f9fa;">
+
+    <content>
+        <VBox alignment="TOP_CENTER" spacing="20"
+              style="-fx-background-color: #f8f9fa; -fx-font-family: 'Segoe UI';">
+
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+           <!-- 🦊 顶部导航（上一只 | 名称 | 下一只） -->
+<HBox alignment="CENTER" spacing="30" style="-fx-padding: 6;">
+    
+    <!-- ◀ 上一只 -->
+    <Button fx:id="prevAnimalButton" text="◀"
+            prefWidth="60"
+            style="-fx-background-color: #e0e0e0; -fx-text-fill: #37474f; 
+                   -fx-font-size: 12px; -fx-font-weight: bold; -fx-cursor: hand;" 
+            onAction="#onPreviousAnimalClick" />
+
+    <!-- 🦊 名字（字体缩小） -->
+    <Label fx:id="animalName" 
+           text="Animal Name"
+           style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #2f4f4f;" />
+
+    <!-- 下一只 ▶ -->
+    <Button fx:id="nextAnimalButton" text="▶"
+            prefWidth="60"
+            style="-fx-background-color: #e0e0e0; -fx-text-fill: #37474f; 
+                   -fx-font-size: 12px; -fx-font-weight: bold; -fx-cursor: hand;" 
+            onAction="#onNextAnimalClick" />
+</HBox>
+
+
+<!-- 🦊 大图 + Group 信息 -->
+<VBox spacing="10" alignment="CENTER">
+    <ImageView fx:id="animalImage" fitWidth="240" fitHeight="240" preserveRatio="true"
+               style="-fx-border-color: #cfd8dc; -fx-background-color: #ffffff; -fx-border-radius: 10;" />
+    
+    <Label fx:id="animalGroup" 
+           text="Group"
+           style="-fx-font-size: 14px; -fx-text-fill: #607d8b;" />
+</VBox>
+
+            
+            
+<!-- 📖 描述区域 -->
+<VBox spacing="10" alignment="TOP_LEFT" 
+      style="-fx-background-color: white; -fx-padding: 15; -fx-border-color: #cfd8dc; -fx-border-radius: 8; -fx-background-radius: 8;">
+
+    <Label text="Description:"
+           style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-text-fill: #2f4f4f;" />
+    
+    <!-- ✅ 用 TextArea 代替 Label，可以滚动显示长文本 -->
+    <TextArea fx:id="animalDescription"
+              text="Description text"
+              wrapText="true"
+              editable="false"
+              prefHeight="100"
+              maxWidth="380"
+              style="-fx-font-size: 13px; -fx-text-fill: #333333; -fx-background-color: transparent; -fx-control-inner-background: transparent;" />
+    
+    <Label text="Recent Sightings:"
+           style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 10 0 0 0; -fx-text-fill: #2f4f4f;" />
+    
+    <ListView fx:id="recentSightingsList" 
+              prefHeight="180" 
+              minHeight="180" 
+              maxHeight="180" />
+</VBox>
+
+            <!-- 📅 月份切换器 -->
+            <HBox alignment="CENTER" spacing="10">
+                <Label text="Month:" 
+                       style="-fx-font-size: 14px; -fx-text-fill: #2f4f4f; -fx-font-weight: bold;" />
+                <ComboBox fx:id="monthSelector" prefWidth="120"/>
+            </HBox>
+
+            <!-- 🗓 活跃日历 -->
+            <VBox spacing="8" alignment="CENTER">
+                <Label text="Activity Calendar 🗓" 
+                       style="-fx-font-weight: bold; -fx-font-size: 16px; -fx-text-fill: #2f4f4f;" />
+                <GridPane fx:id="activityCalendar" hgap="10" vgap="10"
+                          style="-fx-border-color: #cfd8dc; -fx-background-color: #ffffff; -fx-padding: 10;"
+                          prefWidth="400" prefHeight="60"/>
+                <Label text="(Green dots = active days)" 
+                       style="-fx-font-size: 12px; -fx-text-fill: #555555;" />
+            </VBox>
+
+            <!-- 🗺 地图 -->
+            <VBox spacing="10" alignment="CENTER" 
+                  style="-fx-background-color: white; -fx-padding: 15; -fx-border-color: #4a7c59; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;">
+                <Label text="Habitat Map 🗺"
+                       style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #2f4f4f;" />
+                <WebView fx:id="detailMapView" 
+                         prefWidth="360" 
+                         prefHeight="240"
+                         minHeight="240"
+                         style="-fx-border-color: #cfd8dc; -fx-border-width: 1;" />
+            </VBox>
+
+            <!-- 🌿 底部按钮 -->
+            <HBox spacing="20" alignment="CENTER" style="-fx-padding: 10 0 20 0;">
+                <Button fx:id="backButton" text="⏪ Back" prefWidth="120" onAction="#onBackClick"
+                        style="-fx-background-color: #cfd8dc; -fx-text-fill: #2f4f4f; -fx-font-weight: bold; -fx-cursor: hand;" />
+                <Button fx:id="recommendTrailButton" text="Recommend Trails 🏞"
+                        prefWidth="200"
+                        style="-fx-background-color: #4a7c59; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;"
+                        onAction="#onRecommendTrailClick" />
+            </HBox>
+            
+            <!-- 👀 最近浏览区域 -->
+<VBox spacing="10" alignment="CENTER"
+      style="-fx-background-color: white; -fx-padding: 15; -fx-border-color: #e0e0e0; -fx-border-radius: 8;">
+    
+    <Label text="👀 Recently Viewed"
+           style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #2f4f4f;" />
+
+    <FlowPane fx:id="recentlyViewedPane" hgap="12" vgap="12" alignment="CENTER"
+              prefWidth="360" />
+</VBox>
+            
+
+        </VBox>
+    </content>
+
+</ScrollPane>
